@@ -30,7 +30,7 @@ export default function Acceuil() {
   const dynamicText = buttonClicked ? typeEffectFullStack : typeEffectBaovola;
 
   const handleClick = () => {
-    // Mettre à jour l'état pour changer le texte du h1
+    // Mise à jour de l'état pour changer le texte du h1
     setButtonClicked(!buttonClicked);
   };
 
@@ -55,7 +55,7 @@ export default function Acceuil() {
               margin: "20px",
               borderRadius: "20px",
               width: "50%",
-              margin: "auto", // Centrer horizontalement
+              margin: "auto",
               border: "2px solid dark",
               backdropFilter: "blur(15px)",
               boxShadow: "20px 20px 50px rgba(0, 0, 0, 0.5)",

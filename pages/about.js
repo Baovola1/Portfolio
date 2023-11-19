@@ -56,13 +56,13 @@ export default function About() {
                   <li>TDD(JUnit-Jest)</li>
                 </ul>
               )}
-              {/* Affiche le bouton uniquement si showMore est false */}
+
               {showMore && (
                 <button onClick={clickMore} className={styles.btn}>
                   Next
                 </button>
               )}
-              {/* Affiche la deuxième liste si showMore est true */}
+
               {!showMore && (
                 <ul>
                   <li>HTML</li>
@@ -72,7 +72,7 @@ export default function About() {
                   <li>Material UI</li>
                 </ul>
               )}
-              {/* Affiche le bouton "Back" uniquement si showMore est true */}
+
               {!showMore && (
                 <button onClick={goBack} className={styles.btn}>
                   Back
@@ -125,7 +125,7 @@ export default function About() {
                   <li>StarUML</li>
                 </ul>
               )}
-              {/* Affiche le bouton "Back" uniquement si showMore est true */}
+
               {!outil && (
                 <button onClick={handelBack} className={styles.btn}>
                   Back
