@@ -6,11 +6,22 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "next lint"
+    "lint": "next lint",
+    "postinstall": "tailwindcss build styles/global.css -o styles/tailwind.css"
   },
   "dependencies": {
+    "@emotion/react": "^11.11.1",
+    "@emotion/styled": "^11.11.0",
+    "@mui/icons-material": "^5.14.18",
+    "@mui/material": "^5.14.18",
+    "autoprefixer": "^10.4.16",
+    "next": "14.0.0",
+    "postcss": "^8.4.31",
     "react": "^18",
     "react-dom": "^18",
-    "next": "14.0.0"
+    "react-scroll": "^1.9.0",
+    "react-simple-typewriter": "^5.0.1",
+    "tailwindcss": "^3.3.5",
+    "vanilla-tilt": "^1.8.1"
   }
 }
