@@ -37,39 +37,44 @@ export default function Acceuil() {
   return (
     <>
       <div className={styles.acceuilpage}>
-        <Container
-          fixed
-          sx={{
-            display: "flex",
-            justifyContent: "center",
-            flexDirection: "column",
-            alignItems: "center",
-            height: "60vh",
-          }}
-        >
-          <Card
+        <div data-aos="fade-right">
+          <Container
+            fixed
             sx={{
-              background: "rgba(255, 255, 255, 0.1)",
-              height: "20vh",
-              padding: "15px",
-              margin: "20px",
-              borderRadius: "20px",
-              width: "50%",
-              margin: "auto",
-              border: "2px solid dark",
-              backdropFilter: "blur(15px)",
-              boxShadow: "20px 20px 50px rgba(0, 0, 0, 0.5)",
+              display: "flex",
+              justifyContent: "center",
+              flexDirection: "column",
+              alignItems: "center",
+              height: "60vh",
             }}
           >
-            <CardContent>
-              <h1 className={styles.text1}>{dynamicText}</h1>
-            </CardContent>
-          </Card>
-          <IconButton onClick={handleClick} style={{ color: "cyan" }}>
-            <Fingerprint style={{ fontSize: "2rem" }} />
-            <span style={{ color: "white", fontSize: "20px" }}>Click here</span>
-          </IconButton>
-        </Container>
+            <Card
+              sx={{
+                background: "rgba(255, 255, 255, 0.1)",
+                height: "20vh",
+                padding: "15px",
+                margin: "20px",
+                borderRadius: "20px",
+                width: "50%",
+                margin: "auto",
+                border: "2px solid dark",
+                backdropFilter: "blur(15px)",
+                boxShadow: "20px 20px 50px rgba(0, 0, 0, 0.5)",
+              }}
+            >
+              <CardContent>
+                <h1 className={styles.text1}>{dynamicText}</h1>
+              </CardContent>
+            </Card>
+
+            <IconButton onClick={handleClick} style={{ color: "cyan" }}>
+              <Fingerprint style={{ fontSize: "2rem" }} />
+              <span style={{ color: "white", fontSize: "20px" }}>
+                Click here
+              </span>
+            </IconButton>
+          </Container>
+        </div>
       </div>
     </>
   );

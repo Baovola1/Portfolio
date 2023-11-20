@@ -10,6 +10,7 @@
 .acceuilpage {
   background-image: url(../public/backgrd.jpg);
   min-height: 100vh;
+  background-size: cover;
 }
 
 /* Styles pour chaque carte (card) */

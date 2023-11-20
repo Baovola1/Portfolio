@@ -47,9 +47,11 @@ export default function Project() {
               >
                 Curlybrace
               </Typography>
-              <Typography variant="body2" color="text.secondary">
-                Lizards are a widespread group of squamate reptiles, with over
-                6,000 species, ranging across all continents except Antarctica
+              <Typography variant="body2" sx={{ textAlign: "justify" }}>
+                Application mettant en relation les développeurs(euses) à
+                l'international. <br /> <b>Stack technique</b> : Redux,
+                géocodage, React-three- fiber, Hooks, API, react-router-dom,
+                Cloudinary, messagerie
               </Typography>
             </CardContent>
           </CardActionArea>
@@ -82,9 +84,12 @@ export default function Project() {
               >
                 Proxibanque
               </Typography>
-              <Typography variant="body2" color="text.secondary">
-                Lizards are a widespread group of squamate reptiles, with over
-                6,000 species, ranging across all continents except Antarctica
+              <Typography variant="body2" sx={{ textAlign: "justify" }}>
+                Logiciel de banque permettant de gérer les comptes
+                clients,visualiser les transactions, faire une simulation de
+                crédit et faire des opérations CRUD.
+                <br /> <b>Stack technique</b>: Angular, SpringMVC, DTO, Mapper,
+                Maven, JPA
               </Typography>
             </CardContent>
           </CardActionArea>
@@ -117,7 +122,7 @@ export default function Project() {
               >
                 Morning news
               </Typography>
-              <Typography variant="body2" color="text.secondary">
+              <Typography variant="body2" sx={{ textAlign: "justify" }}>
                 Lizards are a widespread group of squamate reptiles, with over
                 6,000 species, ranging across all continents except Antarctica
               </Typography>
@@ -150,9 +155,44 @@ export default function Project() {
                 component="div"
                 sx={{ textAlign: "center" }}
               >
-                Morning news
+                MyMoviz
               </Typography>
-              <Typography variant="body2" color="text.secondary">
+              <Typography variant="body2" sx={{ textAlign: "justify" }}>
+                Lizards are a widespread group of squamate reptiles, with over
+                6,000 species, ranging across all continents except Antarctica
+              </Typography>
+            </CardContent>
+          </CardActionArea>
+        </Card>
+        {/*5ème carte*/}
+        <Card
+          sx={{
+            borderRadius: "15px",
+            height: "400px",
+          }}
+        >
+          <CardActionArea>
+            <CardMedia
+              sx={{ height: "100%", width: "100vw" }}
+              component="video"
+              controls
+              alt="video"
+            >
+              <source
+                src="/adele-someone-like-you_843273.mp4"
+                type="video/mp4"
+              />
+            </CardMedia>
+            <CardContent>
+              <Typography
+                gutterBottom
+                variant="h5"
+                component="div"
+                sx={{ textAlign: "center" }}
+              >
+                Locapic
+              </Typography>
+              <Typography variant="body2" sx={{ textAlign: "justify" }}>
                 Lizards are a widespread group of squamate reptiles, with over
                 6,000 species, ranging across all continents except Antarctica
               </Typography>
